@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root to: redirect('/cats')
+
   resources :owls
   resources :hedgehogs
   resources :chicks

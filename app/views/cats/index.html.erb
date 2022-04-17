@@ -2,6 +2,15 @@
 
 <h1>Cats</h1>
 
+<%= search_form_for @search do |f| %>
+  <%= f.label :name_cont, '名前' %>
+  <%= f.search_field :name_cont %>
+
+  <%= f.label :age_eq, '年齢' %>
+  <%= f.search_field :age_eq %>
+  <%= f.submit %>
+<% end %>
+
 <div id="cats">
   <% @cats.each do |cat| %>
     <%= render cat %>
@@ -12,4 +21,5 @@
 </div>
 
 <%= paginate @cats %>
+
 <%= link_to "New cat", new_cat_path %>

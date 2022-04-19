@@ -4,6 +4,3 @@ import "./controllers"
 import * as bootstrap from "bootstrap"
 
 Turbo.session.drive = true
-
-// Stimulusのデバッグモード有効化
-application.debug = true

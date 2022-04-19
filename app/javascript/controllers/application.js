@@ -7,3 +7,6 @@ application.debug = false
 window.Stimulus   = application
 
 export { application }
+
+// Stimulusのデバッグモード有効化
+application.debug = true

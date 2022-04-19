@@ -44,7 +44,7 @@ class CatsController < ApplicationController
   # DELETE /cats/1
   def destroy
     @cat.destroy
-    redirect_to cats_url, notice: "Cat was successfully destroyed."
+    flash.now.notice = 'ねこを削除しました'
   end
 
   private
